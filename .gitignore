@@ -1,0 +1,34 @@
+# Ignore all text files
+*.txt
+
+# Ignore Selenium Chromedriver binary
+chromedriver
+chromedriver.exe
+chromedriver.log
+
+# Python-related ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store

@@ -15,12 +15,16 @@ features:
 # driver = webdriver.Chrome('./chromedriver', options=options)
 
 # ======= linux. put chromedriver on folder
-driver = webdriver.Chrome("./chromedriver")
+options = webdriver.ChromeOptions()
+options.add_argument('--ignore-certificate-errors')
+options.add_argument('--ignore-ssl-errors')
+driver = webdriver.Chrome('./chromedriver', options=options)
 
 login_url = "https://academic.ui.ac.id/main/Authentication/"
 homepage_url = "https://academic.ui.ac.id/main/Welcome/"
 logout_url = "https://academic.ui.ac.id/main/Authentication/Logout"
 siak_url = "https://academic.ui.ac.id/main/CoursePlan/CoursePlanEdit"
+#siak_url = "file:///C:/Users/monic/OneDrive/Documents/SIAK-AXZ/irs.html"
 
 # uncomment for testing
 #siak_url = "./Penambahan%20IRS%20-%20Dennis%20Al%20Baihaqi%20Walangadi%20(1906400141)%3B%20Kurikulum%2009.00.12.01-2016%20CoursePlanEdit%20-%20SIAK%20NG.html"
